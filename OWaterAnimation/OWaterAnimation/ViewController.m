@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 #import "UIColor+HexColor.h"
+#import "WaveV.h"
 #import "ButtonAnimationV.h"
 #import "ScrollLabelV.h"
 
 @interface ViewController () <ButtonAnimationVDelegate> {
+    
+    WaveV *waveV;
+    
     ButtonAnimationV *buttonAnimationV;
     
     ScrollLabelV *leftScrollLabelV;
@@ -45,6 +49,18 @@
     
     self.view.backgroundColor = [UIColor colorWithHexString:@"#1E384C"
                                                       alpha:1];
+    
+    {
+        waveV = [[WaveV alloc] initWithFrame:CGRectMake(0,
+                                                        0,
+                                                        CGRectGetWidth(self.view.bounds),
+                                                        CGRectGetHeight(self.view.bounds))];
+        waveV.waveSpeed = 6.0f;
+        waveV.waveAmplitude = 16.0f;
+        // _waveView.backgroundColor = [UIColor colorWithHexString:@"#32BAFA" alpha:1];
+        [self.view addSubview:waveV];
+        [waveV wave];
+    }
     
     {
         buttonAnimationV = [[ButtonAnimationV alloc] initWithFrame:CGRectMake(100, 200, 200, 60)];
