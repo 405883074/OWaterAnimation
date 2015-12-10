@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+HexColor.h"
 #import "ButtonAnimationV.h"
 
 @interface ViewController () <ButtonAnimationVDelegate> {
@@ -30,7 +31,8 @@
 
 - (void)configureView {
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#1E384C"
+                                                      alpha:1];
     
     buttonAnimationV = [[ButtonAnimationV alloc] initWithFrame:CGRectMake(100, 200, 200, 60)];
     buttonAnimationV.center = CGPointMake(self.view.center.x, self.view.center.y + 200);

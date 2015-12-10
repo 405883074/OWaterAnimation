@@ -16,6 +16,7 @@
 		79989E421C19140C006233F3 /* OWaterAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E411C19140C006233F3 /* OWaterAnimationTests.m */; };
 		79989E4D1C19140C006233F3 /* OWaterAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E4C1C19140C006233F3 /* OWaterAnimationUITests.m */; };
 		79989E5D1C191469006233F3 /* ButtonAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E5C1C191469006233F3 /* ButtonAnimationV.m */; };
+		79989E611C191A5F006233F3 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E601C191A5F006233F3 /* UIColor+HexColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		79989E4E1C19140C006233F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79989E5B1C191469006233F3 /* ButtonAnimationV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonAnimationV.h; sourceTree = "<group>"; };
 		79989E5C1C191469006233F3 /* ButtonAnimationV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonAnimationV.m; sourceTree = "<group>"; };
+		79989E5F1C191A5F006233F3 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		79989E601C191A5F006233F3 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		79989E261C19140C006233F3 /* OWaterAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				79989E5E1C191A48006233F3 /* Category */,
 				79989E5A1C191440006233F3 /* Views */,
 				79989E2A1C19140C006233F3 /* AppDelegate.h */,
 				79989E2B1C19140C006233F3 /* AppDelegate.m */,
@@ -151,6 +155,15 @@
 				79989E5C1C191469006233F3 /* ButtonAnimationV.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		79989E5E1C191A48006233F3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				79989E5F1C191A5F006233F3 /* UIColor+HexColor.h */,
+				79989E601C191A5F006233F3 /* UIColor+HexColor.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +298,7 @@
 			files = (
 				79989E2F1C19140C006233F3 /* ViewController.m in Sources */,
 				79989E2C1C19140C006233F3 /* AppDelegate.m in Sources */,
+				79989E611C191A5F006233F3 /* UIColor+HexColor.m in Sources */,
 				79989E291C19140C006233F3 /* main.m in Sources */,
 				79989E5D1C191469006233F3 /* ButtonAnimationV.m in Sources */,
 			);
