@@ -17,6 +17,7 @@
 		79989E4D1C19140C006233F3 /* OWaterAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E4C1C19140C006233F3 /* OWaterAnimationUITests.m */; };
 		79989E5D1C191469006233F3 /* ButtonAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E5C1C191469006233F3 /* ButtonAnimationV.m */; };
 		79989E611C191A5F006233F3 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E601C191A5F006233F3 /* UIColor+HexColor.m */; };
+		79989E641C191F93006233F3 /* ScrollLabelV.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E631C191F93006233F3 /* ScrollLabelV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		79989E5C1C191469006233F3 /* ButtonAnimationV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonAnimationV.m; sourceTree = "<group>"; };
 		79989E5F1C191A5F006233F3 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		79989E601C191A5F006233F3 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		79989E621C191F93006233F3 /* ScrollLabelV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLabelV.h; sourceTree = "<group>"; };
+		79989E631C191F93006233F3 /* ScrollLabelV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLabelV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 			children = (
 				79989E5B1C191469006233F3 /* ButtonAnimationV.h */,
 				79989E5C1C191469006233F3 /* ButtonAnimationV.m */,
+				79989E621C191F93006233F3 /* ScrollLabelV.h */,
+				79989E631C191F93006233F3 /* ScrollLabelV.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79989E641C191F93006233F3 /* ScrollLabelV.m in Sources */,
 				79989E2F1C19140C006233F3 /* ViewController.m in Sources */,
 				79989E2C1C19140C006233F3 /* AppDelegate.m in Sources */,
 				79989E611C191A5F006233F3 /* UIColor+HexColor.m in Sources */,
