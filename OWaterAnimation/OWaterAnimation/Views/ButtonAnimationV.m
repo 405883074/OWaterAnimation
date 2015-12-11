@@ -36,7 +36,7 @@
         insidebtn.layer.masksToBounds = YES;
         insidebtn.layer.cornerRadius = 30;
         [insidebtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [insidebtn setTitle:@"91360病理"
+        [insidebtn setTitle:@"91360病理 + "
                    forState:UIControlStateNormal];
         [insidebtn addTarget:self
                       action:@selector(startAnimation)

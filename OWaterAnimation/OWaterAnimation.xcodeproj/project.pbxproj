@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7909FDEF1C1A5DB900EA0F6E /* ZPWaveV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7909FDEE1C1A5DB900EA0F6E /* ZPWaveV.m */; };
 		79989E291C19140C006233F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E281C19140C006233F3 /* main.m */; };
 		79989E2C1C19140C006233F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E2B1C19140C006233F3 /* AppDelegate.m */; };
 		79989E2F1C19140C006233F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79989E2E1C19140C006233F3 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7909FDED1C1A5DB900EA0F6E /* ZPWaveV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPWaveV.h; sourceTree = "<group>"; };
+		7909FDEE1C1A5DB900EA0F6E /* ZPWaveV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPWaveV.m; sourceTree = "<group>"; };
 		79989E241C19140C006233F3 /* OWaterAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWaterAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79989E281C19140C006233F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79989E2A1C19140C006233F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				79989E631C191F93006233F3 /* ScrollLabelV.m */,
 				79989E681C1927EA006233F3 /* WaveV.h */,
 				79989E691C1927EA006233F3 /* WaveV.m */,
+				7909FDED1C1A5DB900EA0F6E /* ZPWaveV.h */,
+				7909FDEE1C1A5DB900EA0F6E /* ZPWaveV.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				79989E6A1C1927EA006233F3 /* WaveV.m in Sources */,
 				79989E291C19140C006233F3 /* main.m in Sources */,
 				79989E5D1C191469006233F3 /* ButtonAnimationV.m in Sources */,
+				7909FDEF1C1A5DB900EA0F6E /* ZPWaveV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +542,7 @@
 				79989E531C19140C006233F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79989E541C19140C006233F3 /* Build configuration list for PBXNativeTarget "OWaterAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +551,7 @@
 				79989E561C19140C006233F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79989E571C19140C006233F3 /* Build configuration list for PBXNativeTarget "OWaterAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +560,7 @@
 				79989E591C19140C006233F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

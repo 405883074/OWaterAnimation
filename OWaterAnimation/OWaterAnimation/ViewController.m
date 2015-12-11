@@ -11,10 +11,12 @@
 #import "WaveV.h"
 #import "ButtonAnimationV.h"
 #import "ScrollLabelV.h"
+#import "ZPWaveV.h"
 
 @interface ViewController () <ButtonAnimationVDelegate> {
     
     WaveV *waveV;
+    ZPWaveV *zpWaveV;
     
     ButtonAnimationV *buttonAnimationV;
     
@@ -45,21 +47,40 @@
     [self configureData];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    {
+        //        zpWaveV.layer.cornerRadius = MIN(CGRectGetHeight(zpWaveV.frame)/2, CGRectGetWidth(zpWaveV.frame)/2);
+    }
+    
+    [self startWave];
+}
+
 - (void)configureView {
     
     self.view.backgroundColor = [UIColor colorWithHexString:@"#1E384C"
                                                       alpha:1];
     
     {
-        waveV = [[WaveV alloc] initWithFrame:CGRectMake(0,
-                                                        0,
-                                                        CGRectGetWidth(self.view.bounds),
-                                                        CGRectGetHeight(self.view.bounds))];
-        waveV.waveSpeed = 6.0f;
-        waveV.waveAmplitude = 16.0f;
-        // _waveView.backgroundColor = [UIColor colorWithHexString:@"#32BAFA" alpha:1];
-        [self.view addSubview:waveV];
-        [waveV wave];
+        //        waveV = [[WaveV alloc] initWithFrame:CGRectMake(0,
+        //                                                        0,
+        //                                                        CGRectGetWidth(self.view.bounds),
+        //                                                        CGRectGetHeight(self.view.bounds))];
+        //        waveV.waveSpeed = 6.0f;
+        //        waveV.waveAmplitude = 16.0f;
+        //        // _waveView.backgroundColor = [UIColor colorWithHexString:@"#32BAFA" alpha:1];
+        //        [self.view addSubview:waveV];
+        //        [waveV wave];
+    }
+    
+    {
+        zpWaveV = [[ZPWaveV alloc] initWithFrame:CGRectMake(0,
+                                                            0,
+                                                            CGRectGetWidth(self.view.bounds),
+                                                            CGRectGetHeight(self.view.bounds))];
+        zpWaveV.percent = 0.0;
+        [self.view addSubview:zpWaveV];
     }
     
     {
@@ -97,16 +118,39 @@
 
 - (void)buttonDidClick {
     NSLog(@"%s", __FUNCTION__);
-    ones = ++ones;
-    if (ones > 9) {
-        tens = ++tens;
-        if (tens > 9) {
-            tens = 0;
-        }
-        ones = 0;
-    }
+    //    ones = ++ones;
+    //    if (ones > 9) {
+    //        tens = ++tens;
+    //        if (tens > 9) {
+    //            tens = 0;
+    //        }
+    //        ones = 0;
+    //    }
+    
+    ones = arc4random() % (10);
+    tens = arc4random() % (10);
+    
+    NSString *string = [NSString stringWithFormat:@"%i%i", tens, ones];
+    zpWaveV.percent = string.floatValue / 100;
     [leftScrollLabelV scollToNum:tens];
     [rightScrollLabelV scollToNum:ones];
+    [zpWaveV startWave];
+    
+}
+
+- (void)startWave
+{
+    [zpWaveV startWave];
+}
+
+- (void)stopWave
+{
+    [zpWaveV stopWave];
+}
+
+- (void)resetWave
+{
+    [zpWaveV reset];
 }
 
 @end
